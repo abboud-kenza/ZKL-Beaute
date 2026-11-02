@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZKL Beauté - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <div class="entete">
+            <h1>ZKL Beauté</h1>
+            <p>Salon de coiffure et esthétique</p>
+        </div>
+
+        <!-- Menu de navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Titre de la page -->
+        <section class="titre-page">
+            <h2>Contactez-nous</h2>
+            <p>Nous serons ravies de répondre à vos questions.</p>
+        </section>
+
+        <div class="conteneur colonnes-contact">
+
+            <!-- Coordonnées du salon -->
+            <section class="bloc-contact">
+                <h2>Nos coordonnées</h2>
+
+                <h3>Adresse</h3>
+                <p>150 Boulevard Greber</p>
+                <p>Gatineau (Québec)</p>
+
+                <h3>Téléphone</h3>
+                <p>438 462 5184</p>
+
+                <h3>Courriel</h3>
+                <p>contact@zklbeaute.example</p>
+
+                <p class="note">Coordonnées fictives utilisées pour un projet scolaire.</p>
+
+                <!-- Tableau des horaires -->
+                <h2>Heures d'ouverture</h2>
+
+                <div class="tableau-defilant">
+                    <table>
+                        <caption>Horaire hebdomadaire du salon</caption>
+
+                        <thead>
+                            <tr>
+                                <th>Jour</th>
+                                <th>Horaire</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr><td>Lundi</td><td>Fermé</td></tr>
+                            <tr><td>Mardi</td><td>9 h - 18 h</td></tr>
+                            <tr><td>Mercredi</td><td>9 h - 18 h</td></tr>
+                            <tr><td>Jeudi</td><td>9 h - 20 h</td></tr>
+                            <tr><td>Vendredi</td><td>9 h - 20 h</td></tr>
+                            <tr><td>Samedi</td><td>10 h - 17 h</td></tr>
+                            <tr><td>Dimanche</td><td>Fermé</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Formulaire de contact -->
+            <section class="bloc-contact">
+                <h2>Envoyez-nous un message</h2>
+                <p>Remplissez le formulaire ci-dessous pour nous faire part de votre demande.</p>
+
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend>Vos informations</legend>
+
+                        <div class="champ">
+                            <label for="nom">Nom complet *</label>
+                            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                        </div>
+
+                        <div class="champ">
+                            <label for="courriel">Adresse courriel *</label>
+                            <input type="email" id="courriel" name="courriel" placeholder="exemple@courriel.com" required>
+                        </div>
+
+                        <div class="champ">
+                            <label for="telephone">Téléphone</label>
+                            <input type="tel" id="telephone" name="telephone" placeholder="819-555-0123">
+                        </div>
+
+                        <div class="champ">
+                            <label for="service">Service souhaité</label>
+                            <select id="service" name="service">
+                                <option value="">Choisir un service</option>
+                                <option value="coupe">Coupe</option>
+                                <option value="coloration">Coloration</option>
+                                <option value="brushing">Brushing</option>
+                                <option value="manucure">Manucure</option>
+                                <option value="visage">Soin du visage</option>
+                            </select>
+                        </div>
+
+                        <div class="champ">
+                            <label for="message">Votre message *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Écrivez votre message ici..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="bouton">Envoyer</button>
+
+                    </fieldset>
+                </form>
+
+                <p class="note">Ce formulaire est une démonstration HTML. Il ne transmet pas de message.</p>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2026 ZKL Beauté - Projet scolaire fictif.</p>
+        <p>Votre beauté, notre passion.</p>
+    </footer>
+
+</body>
+</html>
