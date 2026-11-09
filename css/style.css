@@ -245,11 +245,7 @@ nav a[aria-current="page"] {
     margin-bottom: 5px;
 }
 
-.note {
-    font-size: 0.9rem;
-    color: #62545a;
-    margin-top: 20px;
-}
+
 
 /* Tableau des horaires */
 
@@ -347,16 +343,22 @@ footer p {
 /* Adaptation aux tablettes */
 
 @media (max-width: 900px) {
-    .grille-services {
-        grid-template-columns: repeat(2, 1fr);
+    .banniere {
+        flex-direction: column;
     }
 
     .texte-banniere {
-        padding: 30px;
+        width: 100%;
     }
 
-    .texte-banniere h2 {
-        font-size: 1.8rem;
+    .banniere img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .grille-services {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .colonnes-contact {
@@ -385,16 +387,16 @@ footer p {
     }
 
     .texte-banniere {
-        width: 100%;
+        width: 80%;
         padding: 30px 20px;
         text-align: center;
     }
 
     .banniere img {
-        width: 100%;
-        height: 230px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
     }
-
     .grille-services {
         grid-template-columns: 1fr;
     }
